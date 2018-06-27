@@ -5,7 +5,7 @@
 	<portlet>
 		<portlet-name>book-manager</portlet-name>
 		<display-name>Book Manager</display-name>
-		<portlet-class>com.lynn.demo.book.BookManager</portlet-class>
+		<portlet-class>com.huqiwen.demo.book.BookManager</portlet-class>
 		<init-param>
 			<name>view-template</name>
 			<value>/html/bookManager/view.jsp</value>

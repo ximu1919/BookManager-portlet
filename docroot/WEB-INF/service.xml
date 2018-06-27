@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
-<service-builder package-path="com.lynn.demo.book">
-	<author>10295</author>
+<service-builder package-path="com.huqiwen.demo.book" >
+	<author>huqiwen</author>
 	<namespace>book</namespace>
-
+	<!-- book_book -->
 	<entity name="Books" local-service="true" remote-service="false">
 
 		<!-- PK fields -->
@@ -36,11 +36,11 @@
 
 		<!-- Finder methods -->
 		
-		<!-- select * from book_books where groupId=xxx and companyId like 'xxx' -->
+		<!-- select * from book_books where groupId=xxx and companyId like 'companyId' -->
 		<finder return-type="Collection" name="c_g">
 			<finder-column name="groupId"/>
-			<finder-column name="companyId" />
+			<finder-column name="companyId"/>
 		</finder>
-
 	</entity>
+	
 </service-builder>

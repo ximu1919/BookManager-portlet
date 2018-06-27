@@ -2,8 +2,8 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping default-lazy="false" auto-import="false">
-	<import class="com.lynn.demo.book.model.Books" />
-	<class name="com.lynn.demo.book.model.impl.BooksImpl" table="book_Books">
+	<import class="com.huqiwen.demo.book.model.Books" />
+	<class name="com.huqiwen.demo.book.model.impl.BooksImpl" table="book_Books">
 		<cache usage="read-write" />
 		<id name="bookId" type="long">
 			<generator class="assigned" />

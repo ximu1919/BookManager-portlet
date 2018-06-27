@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <model-hints>
-	<model name="com.lynn.demo.book.model.Books">
+	<model name="com.huqiwen.demo.book.model.Books">
 		<field name="bookId" type="long" />
 		<field name="groupId" type="long" />
 		<field name="companyId" type="long" />

@@ -7,7 +7,7 @@
 			<access>PROPERTY</access>
 		</persistence-unit-defaults>
 	</persistence-unit-metadata>
-	<mapped-superclass class="com.lynn.demo.book.model.impl.BooksModelImpl">
+	<mapped-superclass class="com.huqiwen.demo.book.model.impl.BooksModelImpl">
 		<attributes>
 			<id name="bookId" />
 			<basic name="groupId" />
@@ -32,7 +32,7 @@
 			<transient name="userUuid" />
 		</attributes>
 	</mapped-superclass>
-	<entity class="com.lynn.demo.book.model.impl.BooksImpl" name="Books">
+	<entity class="com.huqiwen.demo.book.model.impl.BooksImpl" name="Books">
 		<table name="book_Books" />
 		<attributes />
 	</entity>
