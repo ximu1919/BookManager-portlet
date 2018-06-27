@@ -1,0 +1,1 @@
+create index IX_B82784B8 on book_Books (groupId, companyId);

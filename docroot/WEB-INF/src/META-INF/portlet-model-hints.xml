@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.lynn.demo.book.model.Books">
+		<field name="bookId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="bookName" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="price" type="double" />
+		<field name="bookSN" type="String" />
+		<field name="content" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+	</model>
+</model-hints>

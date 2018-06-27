@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.lynn.demo.book">
+	<author>10295</author>
+	<namespace>book</namespace>
+
+	<entity name="Books" local-service="true" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="bookId" type="long" primary="true" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+		<column name="companyId" type="long" />
+		<!-- Audit fields -->
+
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="bookName" type="String" />
+		<column name="price" type="double" />
+		<column name="bookSN" db-name="book_sn" type="String" />
+		<column name="content" type="String" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="modifiedDate" />
+		</order>
+
+		<!-- Finder methods -->
+		
+		<!-- select * from book_books where groupId=xxx and companyId like 'xxx' -->
+		<finder return-type="Collection" name="c_g">
+			<finder-column name="groupId"/>
+			<finder-column name="companyId" />
+		</finder>
+
+	</entity>
+</service-builder>
